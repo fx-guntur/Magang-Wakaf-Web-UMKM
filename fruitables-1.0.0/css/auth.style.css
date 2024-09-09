@@ -39,8 +39,8 @@ main {
     min-height: 100%;
     z-index: 1;
     padding: 6.5rem 4rem;
-    color: hsl(var(--primary-foreground));
-    background-color: hsla(var(--primary), 0.7);
+    color: white;
+    background-color: #007f8370;
 }
 
 #auth-hero .content .title {
@@ -58,8 +58,8 @@ main {
 
 #auth-form {
     width: 100%;
-    background-color: hsl(var(--primary));
-    color: hsl(var(--primary-foreground));
+    background-color: #007f83;
+    color: white;
     padding: 2.5rem;
     display: flex;
     flex-direction: column;
@@ -69,7 +69,7 @@ main {
 
 .btn-back {
     background-color: transparent;
-    color: hsl(var(--primary-foreground));
+    color: white;
     display: inline-flex;
     gap: 0.5rem;
     align-items: center;
