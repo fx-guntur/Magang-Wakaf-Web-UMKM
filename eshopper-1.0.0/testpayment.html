@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Daily UI 002 - Checkout</title>
+  <link rel="stylesheet" href="./css/payment.css.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/bb515311f9.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Payment Gate</title>
+  <body>
+    <div class="checkout-container">
+      <div class="left-side">
+        <div class="text-box">
+          <h1 class="home-heading">E Toko Roti Kering</h1>
+          <p class="home-price"><em>Roti Kering Murah </em>/ Toples</p>
+          <hr class="left-hr" />
+          <p class="home-desc"><em>Wirobrajan </em>Kota <em>Yogyakarta</em></p>          
+        </div>
+      </div>
+
+      <div class="right-side">
+        <div class="receipt">
+          <h2 class="receipt-heading">Total Pembayaran</h2>
+          <div>
+            <table class="table">
+              <tr>
+                <td>Total Harga Produk</td>
+                <td class="price">Rp 570.000</td>
+              </tr>
+              <tr>
+                <td>Potongan Harga</td>
+                <td class="price"> - </td>
+              </tr>              
+              <tr>
+                <td>Total Yang Harus Dibayarkan</td>
+                <td class="price">Rp 570.000</td>
+              </tr>              
+            </table>
+          </div>
+        </div>
+
+        <div class="payment-info">
+          <h3 class="payment-heading">Informasi Pembayaran</h3>
+          <form
+            class="form-box"
+            enctype="text/plain"
+            method="get"
+            target="_blank"
+          >
+            <div>
+              <label for="full-name">Nama</label>
+              <input
+                id="full-name"
+                name="full-name"
+                placeholder="Satoshi Nakamoto"
+                required
+                type="text"
+              />
+            </div>
+
+            <div>
+              <label for="credit-card-num"
+                >Nomor Kartu
+                <span class="card-logos">
+                  <i class="card-logo fa-brands fa-cc-visa"></i>
+                  <i class="card-logo fa-brands fa-cc-amex"></i>
+                  <i class="card-logo fa-brands fa-cc-mastercard"></i>
+                  <i class="card-logo fa-brands fa-cc-discover"></i> </span
+              ></label>
+              <input
+                id="credit-card-num"
+                name="credit-card-num"
+                placeholder="1111-2222-3333-4444"
+                required
+                type="text"
+              />
+            </div>
+
+            <div>
+              <p class="expires">Kadaluarsa:</p>
+              <div class="card-experation">
+                <label for="expiration-month">Month</label>
+                <select id="expiration-month" name="expiration-month" required>
+                  <option value="">Month:</option>
+                  <option value="">Januari</option>
+                  <option value="">Februari</option>
+                  <option value="">Maret</option>
+                  <option value="">April</option>
+                  <option value="">Mei</option>
+                  <option value="">Juni</option>
+                  <option value="">Juli</option>
+                  <option value="">Agustus</option>
+                  <option value="">September</option>
+                  <option value="">Oktober</option>
+                  <option value="">November</option>
+                  <option value="">Desemeber</option>
+                </select>
+
+                <label class="expiration-year">Tahun</label>
+                <select id="experation-year" name="experation-year" required>
+                  <option value="">Tahun</option>
+                  <option value="">2023</option>
+                  <option value="">2024</option>
+                  <option value="">2025</option>
+                  <option value="">2026</option>
+                </select>
+              </div>
+            </div>
+
+            <div>
+              <label for="cvv">CVV</label>
+              <input
+                id="cvv"
+                name="cvv"
+                placeholder="415"
+                type="text"
+                required
+              />
+              <a class="cvv-info" href="#">Apa itu CVV?</a>
+            </div>
+
+            <button class="btn">
+              <i class="fa-solid fa-lock"></i> Bayar
+            </button>
+          </form>
+
+          <p class="footer-text">
+            <i class="fa-solid fa-lock"></i>
+            Keamanan data kartu anda akan terinskrip
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+<!-- partial -->
+  
+</body>
+</html>
