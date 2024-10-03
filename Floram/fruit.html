@@ -66,7 +66,7 @@
 
   <body>
     <!-- header section strats -->
-    <header class="header_section header_inner">
+    <header class="header_section">
       <div class="container">
         <nav class="navbar navbar-expand-lg custom_nav-container">
           <a
@@ -93,34 +93,47 @@
             id="navbarSupportedContent"
           >
             <ul class="navbar-nav ml-auto">
-              <li class="nav-item">
+              <li class="nav-item active">
                 <a
                   class="nav-link"
                   href="index.html"
-                  >Home
-                </a>
+                  >Home <span class="sr-only">(current)</span></a
+                >
               </li>
               <li class="nav-item">
                 <a
                   class="nav-link"
                   href="about.html"
                 >
-                  About
-                </a>
+                  Tentang Kami</a
+                >
               </li>
-              <li class="nav-item active">
+              <li class="nav-item">
                 <a
                   class="nav-link"
                   href="fruit.html"
-                  >Fruits <span class="sr-only">(current)</span>
-                </a>
+                  >Buah</a
+                >
               </li>
-
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="checkout.html"
+                  >Checkout</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="cart.html"
+                  >Keranjang</a
+                >
+              </li>
               <li class="nav-item">
                 <a
                   class="nav-link"
                   href="contact.html"
-                  >Contact Us</a
+                  >Hubungi Kami</a
                 >
               </li>
             </ul>
@@ -129,16 +142,17 @@
       </div>
     </header>
     <!-- end header section -->
+    <!-- end header section -->
 
     <!-- product section -->
 
-    <section class="product_section layout_padding2-top layout_padding-bottom">
+    <section class="product_section layout_padding">
       <div class="container">
         <div class="heading_container heading_center">
-          <h2>Our Fruits</h2>
+          <h2>Buah-Buahan Kami</h2>
           <p>
-            which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be
-            sure there isn't an
+            Temukan berbagai pilihan buah segar yang tidak hanya lezat tetapi juga bergizi. Setiap buah memiliki
+            keunikan dan rasa yang khas.
           </p>
         </div>
         <div class="row">
@@ -147,7 +161,7 @@
               <div class="img-box">
                 <img
                   src="images/p1.png"
-                  alt=""
+                  alt="Jeruk"
                 />
               </div>
               <div class="detail-box">
@@ -173,9 +187,9 @@
                     aria-hidden="true"
                   ></i>
                 </span>
-                <a href=""> Orange </a>
+                <a href=""> Jeruk </a>
                 <div class="price_box">
-                  <h6 class="price_heading"><span>$</span> 10.00</h6>
+                  <h6 class="price_heading"><span>Rp</span> 15000</h6>
                 </div>
               </div>
             </div>
@@ -185,7 +199,7 @@
               <div class="img-box">
                 <img
                   src="images/p2.png"
-                  alt=""
+                  alt="Durian"
                 />
               </div>
               <div class="detail-box">
@@ -213,7 +227,7 @@
                 </span>
                 <a href=""> Durian </a>
                 <div class="price_box">
-                  <h6 class="price_heading"><span>$</span> 10.00</h6>
+                  <h6 class="price_heading"><span>Rp</span> 30000</h6>
                 </div>
               </div>
             </div>
@@ -223,7 +237,7 @@
               <div class="img-box">
                 <img
                   src="images/p3.png"
-                  alt=""
+                  alt="Kiwi"
                 />
               </div>
               <div class="detail-box">
@@ -251,7 +265,7 @@
                 </span>
                 <a href=""> Kiwi </a>
                 <div class="price_box">
-                  <h6 class="price_heading"><span>$</span> 10.00</h6>
+                  <h6 class="price_heading"><span>Rp</span> 20000</h6>
                 </div>
               </div>
             </div>
@@ -261,7 +275,7 @@
               <div class="img-box">
                 <img
                   src="images/p4.png"
-                  alt=""
+                  alt="Mangga"
                 />
               </div>
               <div class="detail-box">
@@ -287,9 +301,9 @@
                     aria-hidden="true"
                   ></i>
                 </span>
-                <a href=""> Mango </a>
+                <a href=""> Mangga </a>
                 <div class="price_box">
-                  <h6 class="price_heading"><span>$</span> 10.00</h6>
+                  <h6 class="price_heading"><span>Rp</span> 12000</h6>
                 </div>
               </div>
             </div>
@@ -299,7 +313,7 @@
               <div class="img-box">
                 <img
                   src="images/p5.png"
-                  alt=""
+                  alt="Pisang"
                 />
               </div>
               <div class="detail-box">
@@ -325,9 +339,9 @@
                     aria-hidden="true"
                   ></i>
                 </span>
-                <a href=""> Banana </a>
+                <a href=""> Pisang </a>
                 <div class="price_box">
-                  <h6 class="price_heading"><span>$</span> 10.00</h6>
+                  <h6 class="price_heading"><span>Rp</span> 8000</h6>
                 </div>
               </div>
             </div>
@@ -337,7 +351,7 @@
               <div class="img-box">
                 <img
                   src="images/p6.png"
-                  alt=""
+                  alt="Apel"
                 />
               </div>
               <div class="detail-box">
@@ -363,16 +377,16 @@
                     aria-hidden="true"
                   ></i>
                 </span>
-                <a href=""> Apple </a>
+                <a href=""> Apel </a>
                 <div class="price_box">
-                  <h6 class="price_heading"><span>$</span> 10.00</h6>
+                  <h6 class="price_heading"><span>Rp</span> 15000</h6>
                 </div>
               </div>
             </div>
           </div>
         </div>
         <div class="btn-box">
-          <a href=""> View All </a>
+          <a href=""> Lihat Semua </a>
         </div>
       </div>
     </section>
@@ -397,7 +411,7 @@
                         class="fa fa-map-marker"
                         aria-hidden="true"
                       ></i>
-                      <span> Location </span>
+                      <span> Lokasi </span>
                     </a>
                   </div>
                   <div class="col-md-5">
@@ -409,7 +423,7 @@
                         class="fa fa-phone"
                         aria-hidden="true"
                       ></i>
-                      <span> Call +01 1234567890 </span>
+                      <span> Hubungi +62 81234567890 </span>
                     </a>
                   </div>
                   <div class="col-md-4">
@@ -421,7 +435,7 @@
                         class="fa fa-envelope"
                         aria-hidden="true"
                       ></i>
-                      <span> demo@gmail.com </span>
+                      <span> info@toko-buah.com </span>
                     </a>
                   </div>
                 </div>
@@ -432,7 +446,8 @@
                 <form action="#">
                   <input
                     type="email"
-                    placeholder="Enter Your Email"
+                    placeholder="Masukkan Email Anda"
+                    required
                   />
                   <button>
                     <i
@@ -449,7 +464,7 @@
               class="navbar-brand"
               href="index.html"
             >
-              <span> Floram </span>
+              <span> Toko Buah Segar </span>
             </a>
           </div>
           <div class="social-box">
@@ -483,17 +498,6 @@
     </section>
 
     <!-- end info section -->
-
-    <!-- footer section -->
-    <footer class="footer_section">
-      <div class="container">
-        <p>
-          &copy; <span id="displayYear"></span> All Rights Reserved By
-          <a href="https://html.design/">Free Html Templates</a>
-        </p>
-      </div>
-    </footer>
-    <!-- footer section -->
 
     <!-- jQery -->
     <script src="js/jquery-3.4.1.min.js"></script>

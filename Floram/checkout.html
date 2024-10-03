@@ -56,6 +56,83 @@
   </head>
 
   <body>
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg custom_nav-container">
+          <a
+            class="navbar-brand"
+            href="index.html"
+          >
+            <span>Floram</span>
+          </a>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class=""> </span>
+          </button>
+
+          <div
+            class="collapse navbar-collapse"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a
+                  class="nav-link"
+                  href="index.html"
+                  >Home <span class="sr-only">(current)</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="about.html"
+                >
+                  Tentang Kami</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="fruit.html"
+                  >Buah</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="checkout.html"
+                  >Checkout</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="cart.html"
+                  >Keranjang</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="contact.html"
+                  >Hubungi Kami</a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- end header section -->
     <!-- Page Header Start -->
     <div class="container-fluid bg-secondary mb-5">
       <div
@@ -84,14 +161,14 @@
                 <input
                   class="form-control"
                   type="text"
-                  placeholder="John"
+                  placeholder="Nama Anda"
                 />
               </div>
               <div class="col-md-6 form-group">
-                <label>E-mail(Untuk pengiriman bukti pembayaran)</label>
+                <label>E-mail (Untuk pengiriman bukti pembayaran)</label>
                 <input
                   class="form-control"
-                  type="text"
+                  type="email"
                   placeholder="example@email.com"
                 />
               </div>
@@ -100,7 +177,7 @@
                 <input
                   class="form-control"
                   type="text"
-                  placeholder="+123 456 789"
+                  placeholder="+62 81234567890"
                 />
               </div>
               <div class="col-md-6 form-group">
@@ -108,24 +185,24 @@
                 <input
                   class="form-control"
                   type="text"
-                  placeholder="123 Street"
+                  placeholder="Contoh Alamat"
                 />
               </div>
               <div class="col-md-6 form-group">
-                <label>Link Google Maps(Optional)</label>
+                <label>Link Google Maps (Opsional)</label>
                 <input
                   class="form-control"
                   type="text"
-                  placeholder="123 Street"
+                  placeholder="Link Google Maps"
                 />
               </div>
               <div class="col-md-6 form-group">
                 <label>Kota/Kabupaten</label>
                 <select class="custom-select">
-                  <option selected>Wirobrajan</option>
+                  <option selected>Yogyakarta</option>
                   <option>Bantul</option>
-                  <option>Godean</option>
-                  <option>Jakal</option>
+                  <option>Sleman</option>
+                  <option>Gunungkidul</option>
                 </select>
               </div>
               <div class="col-md-6 form-group">
@@ -133,7 +210,7 @@
                 <input
                   class="form-control"
                   type="text"
-                  placeholder="New York"
+                  placeholder="Catatan tambahan"
                 />
               </div>
               <div class="col-md-6 form-group">
@@ -141,7 +218,7 @@
                 <input
                   class="form-control"
                   type="text"
-                  placeholder="123"
+                  placeholder="Kode Pos"
                 />
               </div>
               <div class="col-md-12 form-group">
@@ -154,7 +231,7 @@
                   <label
                     class="custom-control-label"
                     for="newaccount"
-                    >Create an account</label
+                    >Buat akun baru</label
                   >
                 </div>
               </div>
@@ -170,7 +247,7 @@
                     for="shipto"
                     data-toggle="collapse"
                     data-target="#shipping-address"
-                    >Ship to different address</label
+                    >Kirim ke alamat berbeda</label
                   >
                 </div>
               </div>
@@ -180,21 +257,21 @@
             class="collapse mb-4"
             id="shipping-address"
           >
-            <h4 class="font-weight-semi-bold mb-4">Pengiriman Lainya</h4>
+            <h4 class="font-weight-semi-bold mb-4">Pengiriman Lainnya</h4>
             <div class="row">
               <div class="col-md-6 form-group">
                 <label>Pesanan Atas Nama</label>
                 <input
                   class="form-control"
                   type="text"
-                  placeholder="John"
+                  placeholder="Nama Penerima"
                 />
               </div>
               <div class="col-md-6 form-group">
-                <label>E-mail(Untuk pengiriman bukti pembayaran)</label>
+                <label>E-mail (Untuk pengiriman bukti pembayaran)</label>
                 <input
                   class="form-control"
-                  type="text"
+                  type="email"
                   placeholder="example@email.com"
                 />
               </div>
@@ -203,7 +280,7 @@
                 <input
                   class="form-control"
                   type="text"
-                  placeholder="+123 456 789"
+                  placeholder="+62 81234567890"
                 />
               </div>
               <div class="col-md-6 form-group">
@@ -211,24 +288,24 @@
                 <input
                   class="form-control"
                   type="text"
-                  placeholder="123 Street"
+                  placeholder="Contoh Alamat"
                 />
               </div>
               <div class="col-md-6 form-group">
-                <label>Link Google Maps(Optional)</label>
+                <label>Link Google Maps (Opsional)</label>
                 <input
                   class="form-control"
                   type="text"
-                  placeholder="123 Street"
+                  placeholder="Link Google Maps"
                 />
               </div>
               <div class="col-md-6 form-group">
                 <label>Kota/Kabupaten</label>
                 <select class="custom-select">
-                  <option selected>Wirobrajan</option>
+                  <option selected>Yogyakarta</option>
                   <option>Bantul</option>
-                  <option>Godean</option>
-                  <option>Jakal</option>
+                  <option>Sleman</option>
+                  <option>Gunungkidul</option>
                 </select>
               </div>
               <div class="col-md-6 form-group">
@@ -236,7 +313,7 @@
                 <input
                   class="form-control"
                   type="text"
-                  placeholder="New York"
+                  placeholder="Catatan tambahan"
                 />
               </div>
               <div class="col-md-6 form-group">
@@ -244,38 +321,8 @@
                 <input
                   class="form-control"
                   type="text"
-                  placeholder="123"
+                  placeholder="Kode Pos"
                 />
-              </div>
-              <div class="col-md-12 form-group">
-                <div class="custom-control custom-checkbox">
-                  <input
-                    type="checkbox"
-                    class="custom-control-input"
-                    id="newaccount"
-                  />
-                  <label
-                    class="custom-control-label"
-                    for="newaccount"
-                    >Create an account</label
-                  >
-                </div>
-              </div>
-              <div class="col-md-12 form-group">
-                <div class="custom-control custom-checkbox">
-                  <input
-                    type="checkbox"
-                    class="custom-control-input"
-                    id="shipto"
-                  />
-                  <label
-                    class="custom-control-label"
-                    for="shipto"
-                    data-toggle="collapse"
-                    data-target="#shipping-address"
-                    >Ship to different address</label
-                  >
-                </div>
               </div>
             </div>
           </div>
@@ -319,15 +366,116 @@
           <div class="card border-secondary mb-5">
             <div class="card-header bg-secondary border-0">
               <h4 class="font-weight-semi-bold m-0">Pembayaran</h4>
-              <div class="card-footer border-secondary bg-transparent">
-                <button class="btn btn-lg btn-block btn-primary font-weight-bold my-3 py-3">Bayar</button>
-              </div>
+            </div>
+            <div class="card-footer border-secondary bg-transparent">
+              <button class="btn btn-lg btn-block btn-primary font-weight-bold my-3 py-3">Bayar</button>
             </div>
           </div>
         </div>
       </div>
     </div>
     <!-- Checkout End -->
+    <section class="info_section">
+      <div class="info_container">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-9">
+              <div class="info_contact">
+                <div class="row">
+                  <div class="col-md-3">
+                    <a
+                      href="#"
+                      class="link-box"
+                    >
+                      <i
+                        class="fa fa-map-marker"
+                        aria-hidden="true"
+                      ></i>
+                      <span> Lokasi </span>
+                    </a>
+                  </div>
+                  <div class="col-md-5">
+                    <a
+                      href="#"
+                      class="link-box"
+                    >
+                      <i
+                        class="fa fa-phone"
+                        aria-hidden="true"
+                      ></i>
+                      <span> Hubungi +62 81234567890 </span>
+                    </a>
+                  </div>
+                  <div class="col-md-4">
+                    <a
+                      href="#"
+                      class="link-box"
+                    >
+                      <i
+                        class="fa fa-envelope"
+                        aria-hidden="true"
+                      ></i>
+                      <span> info@toko-buah.com </span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-5 col-lg-3 mx-auto">
+              <div class="info_form">
+                <form action="#">
+                  <input
+                    type="email"
+                    placeholder="Masukkan Email Anda"
+                    required
+                  />
+                  <button>
+                    <i
+                      class="fa fa-arrow-right"
+                      aria-hidden="true"
+                    ></i>
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="info_logo">
+            <a
+              class="navbar-brand"
+              href="index.html"
+            >
+              <span> Toko Buah Segar </span>
+            </a>
+          </div>
+          <div class="social-box">
+            <a href="">
+              <i
+                class="fa fa-facebook"
+                aria-hidden="true"
+              ></i>
+            </a>
+            <a href="">
+              <i
+                class="fa fa-twitter"
+                aria-hidden="true"
+              ></i>
+            </a>
+            <a href="">
+              <i
+                class="fa fa-instagram"
+                aria-hidden="true"
+              ></i>
+            </a>
+            <a href="">
+              <i
+                class="fa fa-youtube"
+                aria-hidden="true"
+              ></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>

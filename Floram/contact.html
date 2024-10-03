@@ -66,7 +66,7 @@
 
   <body>
     <!-- header section strats -->
-    <header class="header_section header_inner">
+    <header class="header_section">
       <div class="container">
         <nav class="navbar navbar-expand-lg custom_nav-container">
           <a
@@ -93,35 +93,48 @@
             id="navbarSupportedContent"
           >
             <ul class="navbar-nav ml-auto">
-              <li class="nav-item">
+              <li class="nav-item active">
                 <a
                   class="nav-link"
                   href="index.html"
-                  >Home
-                </a>
+                  >Home <span class="sr-only">(current)</span></a
+                >
               </li>
               <li class="nav-item">
                 <a
                   class="nav-link"
                   href="about.html"
                 >
-                  About</a
+                  Tentang Kami</a
                 >
               </li>
               <li class="nav-item">
                 <a
                   class="nav-link"
                   href="fruit.html"
-                  >Fruits</a
+                  >Buah</a
                 >
               </li>
-
-              <li class="nav-item active">
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="checkout.html"
+                  >Checkout</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="cart.html"
+                  >Keranjang</a
+                >
+              </li>
+              <li class="nav-item">
                 <a
                   class="nav-link"
                   href="contact.html"
-                  >Contact Us <span class="sr-only">(current)</span>
-                </a>
+                  >Hubungi Kami</a
+                >
               </li>
             </ul>
           </div>
@@ -129,12 +142,13 @@
       </div>
     </header>
     <!-- end header section -->
+    <!-- end header section -->
 
     <!-- contact section -->
-    <section class="contact_section layout_padding2-top layout_padding-bottom">
+    <section class="contact_section layout_padding">
       <div class="container">
         <div class="heading_container heading_center">
-          <h2>Get In <span>Touch</span></h2>
+          <h2>Hubungi <span>Kami</span></h2>
         </div>
         <div class="row">
           <div class="col-md-6 px-0">
@@ -145,7 +159,8 @@
                     <input
                       type="text"
                       class="form-control"
-                      placeholder="Your Name"
+                      placeholder="Nama Anda"
+                      required
                     />
                   </div>
                 </div>
@@ -154,7 +169,8 @@
                     <input
                       type="text"
                       class="form-control"
-                      placeholder="Phone Number"
+                      placeholder="Nomor Telepon"
+                      required
                     />
                   </div>
                 </div>
@@ -164,20 +180,21 @@
                       type="email"
                       class="form-control"
                       placeholder="Email"
+                      required
                     />
                   </div>
                 </div>
                 <div class="form-row">
                   <div class="form-group col">
-                    <input
-                      type="text"
+                    <textarea
                       class="message-box form-control"
-                      placeholder="Message"
-                    />
+                      placeholder="Pesan"
+                      required
+                    ></textarea>
                   </div>
                 </div>
                 <div class="btn_box">
-                  <button>SEND</button>
+                  <button type="submit">KIRIM</button>
                 </div>
               </form>
             </div>
@@ -212,7 +229,7 @@
                         class="fa fa-map-marker"
                         aria-hidden="true"
                       ></i>
-                      <span> Location </span>
+                      <span> Lokasi </span>
                     </a>
                   </div>
                   <div class="col-md-5">
@@ -224,7 +241,7 @@
                         class="fa fa-phone"
                         aria-hidden="true"
                       ></i>
-                      <span> Call +01 1234567890 </span>
+                      <span> Hubungi +62 81234567890 </span>
                     </a>
                   </div>
                   <div class="col-md-4">
@@ -236,7 +253,7 @@
                         class="fa fa-envelope"
                         aria-hidden="true"
                       ></i>
-                      <span> demo@gmail.com </span>
+                      <span> info@toko-buah.com </span>
                     </a>
                   </div>
                 </div>
@@ -247,7 +264,8 @@
                 <form action="#">
                   <input
                     type="email"
-                    placeholder="Enter Your Email"
+                    placeholder="Masukkan Email Anda"
+                    required
                   />
                   <button>
                     <i
@@ -264,7 +282,7 @@
               class="navbar-brand"
               href="index.html"
             >
-              <span> Floram </span>
+              <span> Toko Buah Segar </span>
             </a>
           </div>
           <div class="social-box">
@@ -298,17 +316,6 @@
     </section>
 
     <!-- end info section -->
-
-    <!-- footer section -->
-    <footer class="footer_section">
-      <div class="container">
-        <p>
-          &copy; <span id="displayYear"></span> All Rights Reserved By
-          <a href="https://html.design/">Free Html Templates</a>
-        </p>
-      </div>
-    </footer>
-    <!-- footer section -->
 
     <!-- jQery -->
     <script src="js/jquery-3.4.1.min.js"></script>

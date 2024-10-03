@@ -66,7 +66,7 @@
 
   <body>
     <!-- header section strats -->
-    <header class="header_section header_inner">
+    <header class="header_section">
       <div class="container">
         <nav class="navbar navbar-expand-lg custom_nav-container">
           <a
@@ -93,34 +93,47 @@
             id="navbarSupportedContent"
           >
             <ul class="navbar-nav ml-auto">
-              <li class="nav-item">
+              <li class="nav-item active">
                 <a
                   class="nav-link"
                   href="index.html"
-                  >Home
-                </a>
+                  >Home <span class="sr-only">(current)</span></a
+                >
               </li>
-              <li class="nav-item active">
+              <li class="nav-item">
                 <a
                   class="nav-link"
                   href="about.html"
                 >
-                  About <span class="sr-only">(current)</span>
-                </a>
+                  Tentang Kami</a
+                >
               </li>
               <li class="nav-item">
                 <a
                   class="nav-link"
                   href="fruit.html"
-                  >Fruits</a
+                  >Buah</a
                 >
               </li>
-
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="checkout.html"
+                  >Checkout</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="cart.html"
+                  >Keranjang</a
+                >
+              </li>
               <li class="nav-item">
                 <a
                   class="nav-link"
                   href="contact.html"
-                  >Contact Us</a
+                  >Hubungi Kami</a
                 >
               </li>
             </ul>
@@ -128,6 +141,7 @@
         </nav>
       </div>
     </header>
+    <!-- end header section -->
     <!-- end header section -->
 
     <!-- about section -->
@@ -139,21 +153,21 @@
             <div class="img-box">
               <img
                 src="images/about-img.png"
-                alt=""
+                alt="Tentang Kami"
               />
             </div>
           </div>
           <div class="col-md-6">
             <div class="detail-box">
               <div class="heading_container">
-                <h2>About Us</h2>
+                <h2>Tentang Kami</h2>
               </div>
               <p>
-                Words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you
-                need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum
-                generators on the Internet tend to repeat predefined chunks
+                Kami adalah penyedia buah-buahan segar berkualitas tinggi dari kebun lokal. Dengan komitmen untuk
+                menjaga kealamian dan kesegaran, kami memastikan setiap buah yang kami jual memberikan rasa terbaik
+                untuk Anda dan keluarga. Bergabunglah dengan kami dalam perjalanan menuju gaya hidup sehat!
               </p>
-              <a href=""> Read More </a>
+              <a href=""> Selengkapnya </a>
             </div>
           </div>
         </div>
@@ -180,7 +194,7 @@
                         class="fa fa-map-marker"
                         aria-hidden="true"
                       ></i>
-                      <span> Location </span>
+                      <span> Lokasi </span>
                     </a>
                   </div>
                   <div class="col-md-5">
@@ -192,7 +206,7 @@
                         class="fa fa-phone"
                         aria-hidden="true"
                       ></i>
-                      <span> Call +01 1234567890 </span>
+                      <span> Hubungi +62 81234567890 </span>
                     </a>
                   </div>
                   <div class="col-md-4">
@@ -204,7 +218,7 @@
                         class="fa fa-envelope"
                         aria-hidden="true"
                       ></i>
-                      <span> demo@gmail.com </span>
+                      <span> info@toko-buah.com </span>
                     </a>
                   </div>
                 </div>
@@ -215,7 +229,8 @@
                 <form action="#">
                   <input
                     type="email"
-                    placeholder="Enter Your Email"
+                    placeholder="Masukkan Email Anda"
+                    required
                   />
                   <button>
                     <i
@@ -232,7 +247,7 @@
               class="navbar-brand"
               href="index.html"
             >
-              <span> Floram </span>
+              <span> Toko Buah Segar </span>
             </a>
           </div>
           <div class="social-box">
@@ -266,17 +281,6 @@
     </section>
 
     <!-- end info section -->
-
-    <!-- footer section -->
-    <footer class="footer_section">
-      <div class="container">
-        <p>
-          &copy; <span id="displayYear"></span> All Rights Reserved By
-          <a href="https://html.design/">Free Html Templates</a>
-        </p>
-      </div>
-    </footer>
-    <!-- footer section -->
 
     <!-- jQery -->
     <script src="js/jquery-3.4.1.min.js"></script>
