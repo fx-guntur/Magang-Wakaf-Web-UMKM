@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Checkout - Toko Buah</title>
+    <link
+      rel="stylesheet"
+      href="css/payment.css"
+    />
+    <style>
+      body {
+        background: url("images/b2.jpg"); /* Ganti dengan path yang sesuai */
+        background-position: center;
+        background-size: cover;
+        backdrop-filter: blur(8px);
+        color: #3c3c39;
+
+        display: flex;
+        justify-content: center;
+        height: 100vh;
+        font-family: "Montserrat", sans-serif;
+        position: relative;
+        padding: 2rem 0;
+      }
+    </style>
+  </head>
+  <body>
+    <script
+      src="https://kit.fontawesome.com/bb515311f9.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <div class="checkout-container">
+      <div class="left-side">
+        <img
+          src="images/b2.jpg"
+          alt="Keranjang Buah"
+          style="width: 100%; height: auto"
+        />
+        <div class="text-box">
+          <h1 class="home-heading">Keranjang Buah Segar</h1>
+          <p class="home-price"><em>Rp 450.000</em> / 1 keranjang</p>
+          <hr class="left-hr" />
+          <p class="home-desc"><em>Termasuk:</em> Apel, Pisang, Jeruk, Anggur</p>
+          <p class="home-desc"><em>Tanggal Pengiriman:</em> <em>Senin, 10 Oktober 2024</em></p>
+        </div>
+      </div>
+
+      <div class="right-side">
+        <div class="receipt">
+          <h2 class="receipt-heading">Rincian Pembelian</h2>
+          <div>
+            <table class="table">
+              <tr>
+                <td>Rp 450.000 x 3 keranjang</td>
+                <td class="price">Rp 1.350.000</td>
+              </tr>
+              <tr>
+                <td>Diskon</td>
+                <td class="price">-Rp 50.000</td>
+              </tr>
+              <tr>
+                <td>Subtotal</td>
+                <td class="price">Rp 1.300.000</td>
+              </tr>
+              <tr>
+                <td>Pajak</td>
+                <td class="price">Rp 130.000</td>
+              </tr>
+              <tr class="total">
+                <td>Total</td>
+                <td class="price">Rp 1.430.000</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+
+        <div class="payment-info">
+          <h3 class="payment-heading">Informasi Pembayaran</h3>
+          <form
+            class="form-box"
+            enctype="text/plain"
+            method="get"
+            target="_blank"
+          >
+            <div>
+              <label for="full-name">Nama Lengkap</label>
+              <input
+                id="full-name"
+                name="full-name"
+                placeholder="John Doe"
+                required
+                type="text"
+              />
+            </div>
+
+            <div>
+              <label for="credit-card-num"
+                >Nomor Kartu
+                <span class="card-logos">
+                  <i class="card-logo fa-brands fa-cc-visa"></i>
+                  <i class="card-logo fa-brands fa-cc-amex"></i>
+                  <i class="card-logo fa-brands fa-cc-mastercard"></i>
+                  <i class="card-logo fa-brands fa-cc-discover"></i>
+                </span>
+              </label>
+              <input
+                id="credit-card-num"
+                name="credit-card-num"
+                placeholder="1111-2222-3333-4444"
+                required
+                type="text"
+              />
+            </div>
+
+            <div>
+              <p class="expires">Kedaluwarsa:</p>
+              <div class="card-experation">
+                <label for="expiration-month">Bulan</label>
+                <select
+                  id="expiration-month"
+                  name="expiration-month"
+                  required
+                >
+                  <option value="">Bulan:</option>
+                  <option value="">Januari</option>
+                  <option value="">Februari</option>
+                  <option value="">Maret</option>
+                  <option value="">April</option>
+                  <option value="">Mei</option>
+                  <option value="">Juni</option>
+                  <option value="">Juli</option>
+                  <option value="">Agustus</option>
+                  <option value="">September</option>
+                  <option value="">Oktober</option>
+                  <option value="">November</option>
+                  <option value="">Desember</option>
+                </select>
+
+                <label class="expiration-year">Tahun</label>
+                <select
+                  id="expiration-year"
+                  name="expiration-year"
+                  required
+                >
+                  <option value="">Tahun</option>
+                  <option value="">2024</option>
+                  <option value="">2025</option>
+                  <option value="">2026</option>
+                  <option value="">2027</option>
+                </select>
+              </div>
+            </div>
+
+            <div>
+              <label for="cvv">CVV</label>
+              <input
+                id="cvv"
+                name="cvv"
+                placeholder="415"
+                type="text"
+                required
+              />
+              <a
+                class="cvv-info"
+                href="#"
+                >Apa itu CVV?</a
+              >
+            </div>
+
+            <button class="btn"><i class="fa-solid fa-lock"></i> Beli dengan Aman</button>
+          </form>
+
+          <p class="footer-text">
+            <i class="fa-solid fa-lock"></i>
+            Informasi kartu kredit Anda terenkripsi.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
